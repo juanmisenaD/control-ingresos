@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Control Finanzas - Cargo Bici</title>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>🚲 Cargo Bici - Control Diario</h1>
+    <p class="subtitle">Ingresa cada domicilio según su tarifa individual</p>
+
+    <form id="cargo-form">
+      <fieldset>
+        <legend>Información General</legend>
+        <div>
+          <label style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 4px;">📅 Fecha del
+            Registro (Opcional - por defecto hoy):</label>
+          <input type="date" id="fecha-registro">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Domicilios Realizados</legend>
+        <div id="deliveries-list"></div>
+        <button type="button" id="btn-add-delivery" class="btn-add">+ Agregar Otro Domicilio</button>
+
+        <div class="total-counter">
+          <span>Servicios (<span id="count-domicilios">0</span>):</span>
+          <strong id="lbl-suma-bruta">$0 COP</strong>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Egresos del Día</legend>
+        <div style="margin-bottom: 10px;">
+          <label style="font-size: 0.85rem; color: var(--text-muted);">🛠️ Mantenimiento / Bici ($ COP):</label>
+          <input type="number" id="gasto-bici" value="0" min="0" step="1000">
+        </div>
+        <div>
+          <label style="font-size: 0.85rem; color: var(--text-muted);">🍌 Hidratación / Snacks ($ COP):</label>
+          <input type="number" id="gasto-comida" value="0" min="0" step="1000">
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn-primary" style="padding: 12px; font-size: 1rem;">Guardar Día en
+        Historial</button>
+    </form>
+
+    <div id="resumen" class="resumen-container hidden">
+      <div class="profit-highlight">Ganancia Neta del Día: <span id="lbl-neta">$0 COP</span></div>
+      <div class="metrics-grid">
+        <div class="metric"><span>💼 Tu Sueldo Personal (70%)</span><strong id="lbl-sueldo" style="color: #38bdf8;">$0
+            COP</strong></div>
+        <div class="metric"><span>🛠️ Fondo Mantenimiento Bici (20%)</span><strong id="lbl-bici"
+            style="color: var(--accent-amber);">$0 COP</strong></div>
+        <div class="metric"><span>🛡️ Emergencias / Imprevistos (10%)</span><strong id="lbl-ahorro"
+            style="color: #a78bfa;">$0 COP</strong></div>
+      </div>
+    </div>
+
+    <!-- SECCIÓN DE FILTROS Y GRÁFICOS -->
+    <div class="chart-section">
+      <h3 style="font-size: 1rem; color: #38bdf8; margin-bottom: 10px;">📈 Rendimiento Financiero y Operativo</h3>
+
+      <div class="filter-container">
+        <div class="filter-group">
+          <label>Periodo:</label>
+          <select id="select-periodo">
+            <option value="todos">Todo el Historial</option>
+            <option value="mes_actual">Este Mes</option>
+            <option value="ultimos_7">Últimos 7 días</option>
+            <option value="personalizado">Rango Personalizado</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Desde:</label>
+          <input type="date" id="filter-desde" disabled>
+        </div>
+        <div class="filter-group">
+          <label>Hasta:</label>
+          <input type="date" id="filter-hasta" disabled>
+        </div>
+      </div>
+
+      <!-- TARJETAS KPI -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <span class="kpi-title">📦 Promedio / Envío</span>
+          <strong id="kpi-avg-ticket" class="kpi-value">$0 COP</strong>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-title">📈 Margen Neta (%)</span>
+          <strong id="kpi-margin" class="kpi-value" style="color: var(--accent-green);">0%</strong>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-title">🚲 Costo Op. / Envío</span>
+          <strong id="kpi-cost-delivery" class="kpi-value" style="color: var(--accent-amber);">$0 COP</strong>
+        </div>
+      </div>
+
+      <!-- BARRA DE META Y ALERTAS -->
+      <div class="goal-container">
+        <div class="goal-header">
+          <span>🎯 Meta de Ingresos ($ COP):</span>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <input type="number" id="input-target-goal" value="100000" step="10000" class="input-goal">
+            <span id="lbl-goal-percent" class="goal-percent">0%</span>
+          </div>
+        </div>
+        <div class="progress-bar-bg">
+          <div id="progress-bar-fill" class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+        <div id="alert-high-expenses" class="alert-box hidden">
+          ⚠️ <strong>Atención:</strong> Tus egresos representan más del 20% de tus ingresos en este periodo.
+        </div>
+      </div>
+
+      <!-- PANEL DE GRÁFICOS MULTIPLE -->
+      <div class="charts-grid">
+        <!-- GRÁFICO 1: BARRAS PRINCIPAL -->
+        <div class="chart-card">
+          <h4>📊 Balance Financiero por Fecha</h4>
+          <div class="chart-container-main">
+            <canvas id="financeChart"></canvas>
+          </div>
+        </div>
+
+        <div class="charts-grid-secondary">
+          <!-- GRÁFICO 2: DONA DISTRIBUCIÓN -->
+          <div class="chart-card">
+            <h4>🍰 Distribución de Acumulado Neta</h4>
+            <div class="chart-container-sub">
+              <canvas id="distributionChart"></canvas>
+            </div>
+          </div>
+
+          <!-- GRÁFICO 3: LÍNEA ENVIOS -->
+          <div class="chart-card">
+            <h4>📦 Domicilios Realizados / Día</h4>
+            <div class="chart-container-sub">
+              <canvas id="deliveriesTrendChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCIÓN DE TABLA -->
+    <div class="table-section">
+      <div class="table-header">
+        <h3>📊 Registros en LocalStorage</h3>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha ⬇️</th>
+              <th style="text-align: center;">Envíos</th>
+              <th>Ingresos ($)</th>
+              <th>Egresos ($)</th>
+              <th>G. Neta</th>
+              <th>Sueldo (70%)</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+          <tfoot id="table-foot"></tfoot>
+        </table>
+      </div>
+
+      <div class="backup-grid">
+        <button id="btn-export" class="btn-secondary">📥 Exportar JSON</button>
+        <button id="btn-import-trigger" class="btn-secondary">📤 Importar JSON</button>
+        <button id="btn-copy-clipboard" class="btn-secondary">📋 Copiar al Portapapeles</button>
+        <button id="btn-clear-all" class="btn-secondary"
+          style="background: rgba(239, 68, 68, 0.15); color: var(--danger);">🗑️ Borrar Todo</button>
+      </div>
+
+      <input type="file" id="file-import" accept=".json" class="hidden">
+    </div>
+  </div>
+  
+  <!-- MODAL FLOTANTE DE DETALLES -->
+  <div id="detail-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-date-title">📅 Detalle del Día</h3>
+        <button id="modal-close-btn" class="modal-close">✕</button>
+      </div>
+
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; font-weight: bold;">📦 Domicilios
+        Realizados:</p>
+      <ul id="modal-deliveries-list" class="modal-list"></ul>
+
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; font-weight: bold;">💸 Egresos del Día:
+      </p>
+      <div class="metrics-grid" style="margin-bottom: 15px;">
+        <div class="metric"><span>🛠️ Mantenimiento Bici</span><strong id="modal-cost-bici"
+            style="color: var(--danger);">$0 COP</strong></div>
+        <div class="metric"><span>🍌 Hidratación / Comida</span><strong id="modal-cost-food"
+            style="color: var(--danger);">$0 COP</strong></div>
+      </div>
+
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; font-weight: bold;">💼 Distribución del
+        Neteo:</p>
+      <div class="metrics-grid">
+        <div class="metric"><span>Sueldo Personal (70%)</span><strong id="modal-dist-sueldo" style="color: #38bdf8;">$0
+            COP</strong></div>
+        <div class="metric"><span>Fondo Bici (20%)</span><strong id="modal-dist-bici"
+            style="color: var(--accent-amber);">$0 COP</strong></div>
+        <div class="metric"><span>Ahorro / Emergencias (10%)</span><strong id="modal-dist-ahorro"
+            style="color: #a78bfa;">$0 COP</strong></div>
+      </div>
+    </div>
+  </div>
+  <!-- Librería Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Script App -->
+  <script src="app.js"></script>
+</body>
+
+</html>

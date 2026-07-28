@@ -1,0 +1,298 @@
+[
+  {
+    "fecha": "2026-07-21",
+    "ingresos": {
+      "numeroDomicilios": 6,
+      "totalIngresos": 60000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "Portatil y Memoria al Centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio Contra Entrega al Centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio atras del Terminal"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio a Granada"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio adicional al Centro"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 10000,
+      "totalEgresos": 10000
+    },
+    "balance": {
+      "gananciaNeta": 50000,
+      "distribucion": {
+        "sueldoPersonal": 35000,
+        "fondoBiciCarga": 10000,
+        "imprevistosAhorro": 5000
+      }
+    }
+  },
+  {
+    "fecha": "2026-07-24",
+    "ingresos": {
+      "numeroDomicilios": 8,
+      "totalIngresos": 95000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Terminal"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Terminal"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio del Centro al Terminal"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "Domicilio al Piloto"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "Domicilio del Centro al Terminal"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "Domicilio del Centro al Terminal"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Terminal"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 20000,
+      "totalEgresos": 20000
+    },
+    "balance": {
+      "gananciaNeta": 75000,
+      "distribucion": {
+        "sueldoPersonal": 52500,
+        "fondoBiciCarga": 15000,
+        "imprevistosAhorro": 7500
+      }
+    }
+  },
+  {
+    "fecha": "2026-07-22",
+    "ingresos": {
+      "numeroDomicilios": 7,
+      "totalIngresos": 68000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Terminal"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Terminal"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Terminal"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Centro"
+        },
+        {
+          "tarifa": 8000,
+          "detalle": "Domicilio Centro a Vipasa"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 0,
+      "totalEgresos": 25050
+    },
+    "balance": {
+      "gananciaNeta": 42950,
+      "distribucion": {
+        "sueldoPersonal": 30064.999999999996,
+        "fondoBiciCarga": 8590,
+        "imprevistosAhorro": 4295
+      }
+    }
+  },
+  {
+    "fecha": "2026-07-23",
+    "ingresos": {
+      "numeroDomicilios": 6,
+      "totalIngresos": 56000,
+      "servicios": [
+        {
+          "tarifa": 8000,
+          "detalle": "Llevar al Centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Llevar al Centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Terminal"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Domicilio al Terminal"
+        },
+        {
+          "tarifa": 8000,
+          "detalle": "Recoger del Centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Recoger del Centro"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 25000,
+      "totalEgresos": 25000
+    },
+    "balance": {
+      "gananciaNeta": 31000,
+      "distribucion": {
+        "sueldoPersonal": 21700,
+        "fondoBiciCarga": 6200,
+        "imprevistosAhorro": 3100
+      }
+    }
+  },
+  {
+    "fecha": "2026-07-25",
+    "ingresos": {
+      "numeroDomicilios": 8,
+      "totalIngresos": 60000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "Recoger Telefono en el Centro"
+        },
+        {
+          "tarifa": 7000,
+          "detalle": "Despachar en la Terminal a Pasto"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Contra Entrega al Barrio Manzanares"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Peso Liviano al Terminal a Buenaventura"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Peso Liviano al Terminal  a Santander Quilichao"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Pesado (5 kg) al Centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Recoger Repuesto Celular del Centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "Despachar Terminal a Tumaco (N)"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 13000,
+      "totalEgresos": 33000
+    },
+    "balance": {
+      "gananciaNeta": 27000,
+      "distribucion": {
+        "sueldoPersonal": 18900,
+        "fondoBiciCarga": 5400,
+        "imprevistosAhorro": 2700
+      }
+    }
+  },
+  {
+    "fecha": "2026-07-27",
+    "ingresos": {
+      "numeroDomicilios": 6,
+      "totalIngresos": 65000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "domicilio contra entrega al centro, Tecno Movil"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "domicilio al terminal Coopetrans Tulua"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en pasarela al centro Daniela Osorio"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "domicilio de Multimac a Toga Centro Servicio Tecnico: bateria + epron"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "domicilio al centro con fuente ups y comprar un producto en el centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "domicilio a Chipichape contra entrega a la barberia"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 15000,
+      "totalEgresos": 61400
+    },
+    "balance": {
+      "gananciaNeta": 3600,
+      "distribucion": {
+        "sueldoPersonal": 2520,
+        "fondoBiciCarga": 720,
+        "imprevistosAhorro": 360
+      }
+    }
+  }
+]
