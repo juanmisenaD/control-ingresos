@@ -294,5 +294,215 @@
         "imprevistosAhorro": 360
       }
     }
+  },
+  {
+    "fecha": "2026-07-28",
+    "ingresos": {
+      "numeroDomicilios": 10,
+      "totalIngresos": 109000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "recoger teléfono del centro en Toga"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "recoger un pedido en el C.C el caleño"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "comprar un repuesto + domicilio en la fortuna a pasarela"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar un portátil y un morral de pasarela al centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para Buenaventura por conductor"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar de pasarela al centro (mercado libre)"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en pasarela y despachar al terminal para suarez cauca"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger bateria del centro (Toga) a pasarela"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "contra entrega portátil de pasarela al centro (c.c el caleño oficina)"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "recoger pedido en San Nicolas y llevar a la terminal para Buenaventura por Oficina"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 39000,
+      "totalEgresos": 51200
+    },
+    "balance": {
+      "gananciaNeta": 57800,
+      "distribucion": {
+        "sueldoPersonal": 40460,
+        "fondoBiciCarga": 11560,
+        "imprevistosAhorro": 5780
+      }
+    }
+  },
+  {
+    "fecha": "2026-07-29",
+    "ingresos": {
+      "numeroDomicilios": 12,
+      "totalIngresos": 117000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "llevar cpu y fuente de poder al barrio granada"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar iphone para tapa en Toga (centro)"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar un adaptador nuevamente a granada"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar una impresora al centro contra entrega por la Kr 8va "
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger iphone de tapa en Toga (centro)"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar pedido del ingeniero de la Unión (Valle) al terminal por TransAndina"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "comprar producto químico en San Nicolas"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "recoger cosas del centro a la Paisa Maria Isabel"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "domicilio a don Andres Felipe de la Kr 8 (centro)"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "domicilio a Daniela Osorio (centro) (Macbook)"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "domicilio al terminal para Buga"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar 3 paquetes al terminal para Maria Isabel Medellín"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 94000,
+      "totalEgresos": 94000
+    },
+    "balance": {
+      "gananciaNeta": 23000,
+      "distribucion": {
+        "sueldoPersonal": 16099.999999999998,
+        "fondoBiciCarga": 4600,
+        "imprevistosAhorro": 2300
+      }
+    }
+  },
+  {
+    "fecha": "2026-07-30",
+    "ingresos": {
+      "numeroDomicilios": 14,
+      "totalIngresos": 127000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "llevar celular a Toga Centro"
+        },
+        {
+          "tarifa": 3000,
+          "detalle": "recoger portátil en la Av 3N-34N"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "despachar por Terminal para Maria Isabel"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger teléfono en Toga centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar pedido al centro en punto 14"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar portátil a Daniela Osorio centro"
+        },
+        {
+          "tarifa": 2000,
+          "detalle": "entregar portátil en la Av 3N-34N"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "despachar pedido por terminal a buga"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar pedido a San Nicolas"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger mercancía en el centro bodega y despachar por terminal a medellin"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "recoger una mercancía de Maria Isabel"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger pedido en fortuna centro a despachar por  hotel casa real terminal"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en gsp y despachar por terminal a buga"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "recoger otros pedidos de Maria Isabel"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 30000,
+      "alimentacion": 28000,
+      "totalEgresos": 58000
+    },
+    "balance": {
+      "gananciaNeta": 69000,
+      "distribucion": {
+        "sueldoPersonal": 48300,
+        "fondoBiciCarga": 13800,
+        "imprevistosAhorro": 6900
+      }
+    }
   }
 ]

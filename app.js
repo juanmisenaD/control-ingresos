@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let historial = JSON.parse(localStorage.getItem(DB_KEY)) || [];
 
   // myFunChangeDate(historial, "2026-07-28", "2026-07-27");
+  
   // INSTANCIAS DE GRÁFICOS
   let financeChartInstance = null;
   let distributionChartInstance = null;
