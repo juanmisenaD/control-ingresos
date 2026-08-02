@@ -478,7 +478,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     const fechaIngresada = inputFechaEl.value;
-    const fechaFinal = fechaIngresada || myFuncDefaultDate(new Date());
+    const fechaFinal = fechaIngresada || myFuncDefaultDate();
 
     const entries = deliveriesList.querySelectorAll(".delivery-entry");
     let servicios = [];
@@ -619,7 +619,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem(DB_KEY, JSON.stringify(arr, null, 4));
     console.log(arr, searchDate, toChangeDate);
   }
-  function myFuncDefaultDate(date) {
+  function myFuncDefaultDate(date = new Date()) {
     const fecha = date;
     const an = fecha.getFullYear();
     const mes = String(fecha.getMonth() + 1).padStart(2, "0");
