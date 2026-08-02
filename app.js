@@ -36,15 +36,115 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalDistAhorro = document.getElementById("modal-dist-ahorro");
   const modalCloseBtn = document.getElementById("modal-close-btn");
 
+  // Clave para guardar únicamente el ÚLTIMO MES QUE FUE EXPORTADO
+  const LAST_EXPORTED_MONTH_KEY = "cargo_bici_last_exported_month";
   const DB_KEY = "cargo_bici_domicilios_db";
   let historial = JSON.parse(localStorage.getItem(DB_KEY)) || [];
 
   // myFunChangeDate(historial, "2026-07-28", "2026-07-27");
-  
+
   // INSTANCIAS DE GRÁFICOS
   let financeChartInstance = null;
   let distributionChartInstance = null;
   let deliveriesTrendChartInstance = null;
+
+  /**
+   * Función auxiliar para descargar archivos JSON
+   */
+  function triggerAutoDownloadJSON(data, filename) {
+    const dataBlob = new Blob([JSON.stringify(data, null, 2)], {
+      type: "application/json",
+    });
+    const url = URL.createObjectURL(dataBlob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  }
+
+  /**
+   * Retorna la clave YYYY-MM del mes anterior exacto.
+   */
+  function getPreviousMonthKey() {
+    const hoy = new Date();
+    const fechaMesAnterior = new Date(hoy.getFullYear(), hoy.getMonth() - 1, 1);
+    const anio = fechaMesAnterior.getFullYear();
+    const mes = String(fechaMesAnterior.getMonth() + 1).padStart(2, "0");
+    return `${anio}-${mes}`; // Ej: "2026-07"
+  }
+
+  /**
+   * Verifica si el mes anterior ya fue respaldado.
+   * Solo se ejecuta UNA VEZ por mes.
+   */
+  function checkAndAutoBackupMonth() {
+    if (!historial || historial.length === 0) return;
+
+    // 1. Calculamos el mes que debería estar respaldado (ej: "2026-07")
+    const mesAnteriorClave = getPreviousMonthKey();
+
+    const mesActualClave = `${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, "0")}`;
+    
+    // 2. Leemos cuál fue el último mes que YA respaldamos
+    const ultimoMesExportado = localStorage.getItem(LAST_EXPORTED_MONTH_KEY);
+
+    // 3. SI YA SE RESPALDÓ ESTE MES, NO HACEMOS NADA Y SALIMOS
+    if (ultimoMesExportado === mesAnteriorClave) {
+      // OPCIONAL: Dejar en el historial solo lo que sea del mes actual en adelante
+      historial = historial.filter(item => item.fecha >= `${mesActualClave}-01`);
+      localStorage.setItem(DB_KEY, JSON.stringify(historial, null, 2));
+      return;
+    }
+
+    // 4. Si NO se ha respaldado, filtramos los datos de ese mes
+    const datosMesAnterior = historial.filter(
+      (item) => item.fecha && item.fecha.startsWith(mesAnteriorClave)
+    );
+
+    // 5. Si encontramos registros de ese mes cerrado
+    if (datosMesAnterior.length > 0) {
+      const nombreArchivo = `backup_cargo_bici_${mesAnteriorClave}.json`;
+      
+      // Descargamos el JSON
+      triggerAutoDownloadJSON(datosMesAnterior, nombreArchivo);
+
+      // 💡 MARCA CLAVE: Guardamos que "2026-07" YA se respaldó
+      localStorage.setItem(LAST_EXPORTED_MONTH_KEY, mesAnteriorClave);
+
+      setTimeout(() => {
+        alert(
+          `📦 ¡Respaldo Mensual Automático!\nSe descargó el reporte de ${mesAnteriorClave} (${datosMesAnterior.length} registros).`
+        );
+      }, 500);
+    } else {
+      // Si no había registros de ese mes en particular, igual marcamos como procesado
+      // para que no siga evaluándolo en cada recarga.
+      localStorage.setItem(LAST_EXPORTED_MONTH_KEY, mesAnteriorClave);
+    }
+  }
+
+  function myFunChangeDate(arr, searchDate, toChangeDate) {
+    const registro = arr.find((item) => item.fecha === searchDate);
+    if (registro) {
+      registro.fecha = toChangeDate;
+    }
+    localStorage.setItem(DB_KEY, JSON.stringify(arr, null, 4));
+    console.log(arr, searchDate, toChangeDate);
+  }
+
+  function myFuncDefaultDate(date = new Date()) {
+    const fecha = date;
+    const an = fecha.getFullYear();
+    const mes = String(fecha.getMonth() + 1).padStart(2, "0");
+    const dia = String(fecha.getDate()).padStart(2, "0");
+    return `${an}-${mes}-${dia}`;
+  }
+
+  // Verificar backup automático de mes anterior al iniciar
+  checkAndAutoBackupMonth();
 
   const formatCOP = (valor) =>
     new Intl.NumberFormat("es-CO", {
@@ -611,19 +711,4 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("LocalStorage borrado.");
     }
   });
-  function myFunChangeDate(arr, searchDate, toChangeDate) {
-    const registro = arr.find(item => item.fecha === searchDate);
-    if (registro) {
-      registro.fecha = toChangeDate;
-    }
-    localStorage.setItem(DB_KEY, JSON.stringify(arr, null, 4));
-    console.log(arr, searchDate, toChangeDate);
-  }
-  function myFuncDefaultDate(date = new Date()) {
-    const fecha = date;
-    const an = fecha.getFullYear();
-    const mes = String(fecha.getMonth() + 1).padStart(2, "0");
-    const dia = String(fecha.getDate()).padStart(2, "0");
-    return `${an}-${mes}-${dia}`;
-  }
 });

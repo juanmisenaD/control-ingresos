@@ -566,47 +566,5 @@
         "imprevistosAhorro": 7600
       }
     }
-  },
-  {
-    "fecha": "2026-08-01",
-    "ingresos": {
-      "numeroDomicilios": 5,
-      "totalIngresos": 45000,
-      "servicios": [
-        {
-          "tarifa": 10000,
-          "detalle": "llevar base soporte al piloto (Uriel Corrales)"
-        },
-        {
-          "tarifa": 10000,
-          "detalle": "recoger en iphone store al edificio sultana detras del terminal"
-        },
-        {
-          "tarifa": 10000,
-          "detalle": "recoger pantalla iphone jk en toga centro"
-        },
-        {
-          "tarifa": 5000,
-          "detalle": "recoger gafas de maria isabel en el centro"
-        },
-        {
-          "tarifa": 10000,
-          "detalle": "despachar por terminal a popayan"
-        }
-      ]
-    },
-    "egresos": {
-      "mantenimientoBici": 0,
-      "alimentacion": 20000,
-      "totalEgresos": 20000
-    },
-    "balance": {
-      "gananciaNeta": 25000,
-      "distribucion": {
-        "sueldoPersonal": 17500,
-        "fondoBiciCarga": 5000,
-        "imprevistosAhorro": 2500
-      }
-    }
   }
 ]
