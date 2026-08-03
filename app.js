@@ -240,7 +240,9 @@ document.addEventListener("DOMContentLoaded", () => {
       sumIngresos = 0,
       sumEgresos = 0,
       sumNeta = 0,
-      sumSueldo = 0;
+      sumSueldo = 0,
+      sumFondo = 0,
+      sumAhorro = 0;
 
     datosFiltrados.forEach((item) => {
       const realIndex = historial.findIndex(
@@ -255,6 +257,8 @@ document.addEventListener("DOMContentLoaded", () => {
       sumEgresos += item.egresos.totalEgresos || 0;
       sumNeta += item.balance.gananciaNeta || 0;
       sumSueldo += item.balance.distribucion.sueldoPersonal || 0;
+      sumFondo += item.balance.distribucion.fondoBiciCarga || 0;
+      sumAhorro += item.balance.distribucion.imprevistosAhorro || 0;
 
       tr.innerHTML = `
             <td><span class="date-link" onclick="openDayDetail(${realIndex})">${item.fecha}</span></td>
@@ -263,6 +267,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <td><input type="number" class="table-input" value="${item.egresos.totalEgresos}" step="1000" onchange="updateHistoryRow(${realIndex}, 'egresos', this.value)"></td>
             <td style="color: var(--accent-green); font-weight: bold;">${formatCOP(item.balance.gananciaNeta)}</td>
             <td style="color: #38bdf8;">${formatCOP(item.balance.distribucion.sueldoPersonal)}</td>
+            <td style="color: #fbbf24;">${formatCOP(item.balance.distribucion.fondoBiciCarga)}</td>
+            <td style="color: #a78bfa;">${formatCOP(item.balance.distribucion.imprevistosAhorro)}</td>
             <td><button class="btn-delete-item" onclick="deleteHistoryItem(${realIndex})" title="Eliminar este día">🗑️</button></td>
           `;
       tableBody.appendChild(tr);
@@ -306,6 +312,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <td style="color: var(--danger);">${formatCOP(sumEgresos)}</td>
             <td style="color: var(--accent-green);">${formatCOP(sumNeta)}</td>
             <td style="color: #38bdf8;">${formatCOP(sumSueldo)}</td>
+            <td style="color: #fbbf24;">${formatCOP(sumFondo)}</td>
+            <td style="color: #a78bfa;">${formatCOP(sumAhorro)}</td>
             <td>---</td>
           </tr>
           <tr class="row-avg">
@@ -315,6 +323,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <td>${formatCOP(sumEgresos / totalDias)}</td>
             <td>${formatCOP(sumNeta / totalDias)}</td>
             <td>${formatCOP(sumSueldo / totalDias)}</td>
+            <td>${formatCOP(sumFondo / totalDias)}</td>
+            <td>${formatCOP(sumAhorro / totalDias)}</td>
             <td>---</td>
           </tr>
         `;
