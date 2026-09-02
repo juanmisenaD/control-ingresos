@@ -1,0 +1,1248 @@
+[
+  {
+    "fecha": "2026-08-01",
+    "ingresos": {
+      "numeroDomicilios": 5,
+      "totalIngresos": 45000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "llevar base soporte al piloto (Uriel Corrales)"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en iphone store al edificio sultana detras del terminal"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger pantalla iphone jk en toga centro"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "recoger gafas de maria isabel en el centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar por terminal a popayan"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 20000,
+      "totalEgresos": 20000
+    },
+    "balance": {
+      "gananciaNeta": 25000,
+      "distribucion": {
+        "sueldoPersonal": 17500,
+        "fondoBiciCarga": 5000,
+        "imprevistosAhorro": 2500
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-03",
+    "ingresos": {
+      "numeroDomicilios": 13,
+      "totalIngresos": 107000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": " llevar pedido de chinaquicali en el centro punto 14"
+        },
+        {
+          "tarifa": 7000,
+          "detalle": "llevar teléfono a toga fortuna centro pantalla"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar al centro san andresito elementos de video seguridad"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar disco solido a Daniela Osorio Centro"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "entregar iphone al técnico en imovilshop en fortuna centro"
+        },
+        {
+          "tarifa": 7000,
+          "detalle": "recoger teléfono en toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en tescom y despachar por terminal a la victoria"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en sinertech y despachar por terminal a tulua"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en SinerTech y despachar por terminal a Suarez Cauca"
+        },
+        {
+          "tarifa": 8000,
+          "detalle": "recoger donde William Bolaños y despachar por terminal a tulua"
+        },
+        {
+          "tarifa": 7000,
+          "detalle": "llevar nuevamente el teléfono donde toga fortuna centro"
+        },
+        {
+          "tarifa": 7000,
+          "detalle": "recoger nuevamente el teléfono donde toga fortuna centro"
+        },
+        {
+          "tarifa": 6000,
+          "detalle": "recoger en ledacom y despachar por terminal a tulua"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 26000,
+      "totalEgresos": 26000
+    },
+    "balance": {
+      "gananciaNeta": 81000,
+      "distribucion": {
+        "sueldoPersonal": 56700,
+        "fondoBiciCarga": 16200,
+        "imprevistosAhorro": 8100
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-04",
+    "ingresos": {
+      "numeroDomicilios": 13,
+      "totalIngresos": 132000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "reocger un cargador y entregar en la cl 16 -9 petecuy centro"
+        },
+        {
+          "tarifa": 1000,
+          "detalle": " llevar iphone a revisar en toga fortuna centro, ya ese domicilio quedo cruzado con el cable usb-c"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "recoger en ledacom y despachar al terminal a piendamo"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar portátil y disco m2 a Daniela Osorio"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar router de tescom a la 3ra-15 centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en SinerTech y despachar por terminal a caicedonia"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger consola xbox en san andresito centro a pasarela"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger respueto en fortuna y despachar atrás del terminal a la unión nariño"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en SinerTech y despachar al terminal a Tulua"
+        },
+        {
+          "tarifa": 1000,
+          "detalle": "ir al centro, averiguar unas prendas deportivas en el gran centro comercial"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en SinerTech y despachar al terminal a Buga"
+        },
+        {
+          "tarifa": 20000,
+          "detalle": "recoger en MetroTech y despachar al terminal a Buenaventura"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "recoger en mh y despachar por terminal a Santander de Quilichao para Alvaro"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 33000,
+      "totalEgresos": 33000
+    },
+    "balance": {
+      "gananciaNeta": 99000,
+      "distribucion": {
+        "sueldoPersonal": 69300,
+        "fondoBiciCarga": 19800,
+        "imprevistosAhorro": 9900
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-05",
+    "ingresos": {
+      "numeroDomicilios": 9,
+      "totalIngresos": 80000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "recoger telefono en toga fortuna centro"
+        },
+        {
+          "tarifa": 7000,
+          "detalle": "llevar teléfono en alta Gama fortuna centro"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "llevar portátil y cargador a versalles centro medico de cali"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar disco duro al edificio mercurio al lado de bancoldex"
+        },
+        {
+          "tarifa": 7000,
+          "detalle": "recoger teléfono en alta Gama fortuna centro"
+        },
+        {
+          "tarifa": 14000,
+          "detalle": "llevar y esperar teléfono cambio de batería en toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en la Rivera y despachar por terminal a Caloto, Cauca"
+        },
+        {
+          "tarifa": 1000,
+          "detalle": "llevar a toga fortuna centro teléfono de franyi y a demás hacerle llegar a la casa"
+        },
+        {
+          "tarifa": 1000,
+          "detalle": "un favor a chamito, en recoger en San Andresito - costo voluntario"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 21000,
+      "totalEgresos": 21000
+    },
+    "balance": {
+      "gananciaNeta": 59000,
+      "distribucion": {
+        "sueldoPersonal": 41300,
+        "fondoBiciCarga": 11800,
+        "imprevistosAhorro": 5900
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-06",
+    "ingresos": {
+      "numeroDomicilios": 11,
+      "totalIngresos": 93000,
+      "servicios": [
+        {
+          "tarifa": 6000,
+          "detalle": "despachar pedido de GSP al terminal para Coopetrans Tulua"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en SinerTech y despachar al terminal para Coopetrans Tulua"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en Koaly y despachar al terminal a Santander Quilichao"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en conexion y llevar para Daniela Osorio centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en tescom y dejar en sucre"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en tescom y dejar en san nicolas"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en tescom y dejar en chinaquicali punto 14 centro"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "recoger en el gran comercio un bolso para maria isabel medellin"
+        },
+        {
+          "tarifa": 2000,
+          "detalle": "recoger en el cc las vegas bodega 415 y despachar al terminal para medellin"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "recoger en el cc zoho mall 2do piso y despachar al terminal para medellin"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "recoger en el cc calles de oro del centro un pedido jeans"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 28000,
+      "totalEgresos": 28000
+    },
+    "balance": {
+      "gananciaNeta": 65000,
+      "distribucion": {
+        "sueldoPersonal": 45500,
+        "fondoBiciCarga": 13000,
+        "imprevistosAhorro": 6500
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-11",
+    "ingresos": {
+      "numeroDomicilios": 3,
+      "totalIngresos": 27000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "llevar telefono a Toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar mercancia a la terminal para Santander de Quilichao"
+        },
+        {
+          "tarifa": 7000,
+          "detalle": "despachar mercancia a la terminal para Coopetrans Tulua"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 19000,
+      "totalEgresos": 19000
+    },
+    "balance": {
+      "gananciaNeta": 8000,
+      "distribucion": {
+        "sueldoPersonal": 5600,
+        "fondoBiciCarga": 1600,
+        "imprevistosAhorro": 800
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-12",
+    "ingresos": {
+      "numeroDomicilios": 9,
+      "totalIngresos": 100000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "llevar 5 telefonos a toga fortuna centro"
+        },
+        {
+          "tarifa": 20000,
+          "detalle": "despachar mercancia a la terminal para Santander de Quilichao"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "recoger telefono en toga fortuna centro"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "adicional recoger repuesto en toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar mercancia en bodega cerca a piloto colombina"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar telefono a toga fortuna centro"
+        },
+        {
+          "tarifa": 20000,
+          "detalle": "llevar  y recoger telefono a alta gama fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar equipo al hotel spiwark chipichape"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar telefono a shakiro cell fortuna centro"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 25000,
+      "totalEgresos": 25000
+    },
+    "balance": {
+      "gananciaNeta": 75000,
+      "distribucion": {
+        "sueldoPersonal": 52500,
+        "fondoBiciCarga": 15000,
+        "imprevistosAhorro": 7500
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-13",
+    "ingresos": {
+      "numeroDomicilios": 7,
+      "totalIngresos": 92000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "recoger y despachar desde la bodega las vegas centro al terminal para medellin"
+        },
+        {
+          "tarifa": 20000,
+          "detalle": "recoger en 2 puntos en san nicolas y despachar al terminal para suarez cauca"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en tienda acer y despachar al terminal para buga"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "recoger en comercio y entregar al cc megacentro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en sinertech y despachar al terminal para buga"
+        },
+        {
+          "tarifa": 20000,
+          "detalle": "recoger telefono para toga fortuna centro y entregar otros telefonos"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger en javier repuesto fortuna centro para leidy"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 24000,
+      "totalEgresos": 24000
+    },
+    "balance": {
+      "gananciaNeta": 68000,
+      "distribucion": {
+        "sueldoPersonal": 47600,
+        "fondoBiciCarga": 13600,
+        "imprevistosAhorro": 6800
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-14",
+    "ingresos": {
+      "numeroDomicilios": 10,
+      "totalIngresos": 127000,
+      "servicios": [
+        {
+          "tarifa": 20000,
+          "detalle": "ida telefono a toga fortuna centro"
+        },
+        {
+          "tarifa": 20000,
+          "detalle": "ida telefono alta gama fortuna centro"
+        },
+        {
+          "tarifa": 20000,
+          "detalle": "ida repuestos donde camilo fortuna centro"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "recoger bateria en toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger telefono en jj visores fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar tintas a la fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "regreso telefono de toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "regreso telefono de alta gama fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "regreso de repuestos de camilo fortuna centro"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "recoger y despachar mercancia a Maria Isabel Medellin por terminal"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 36000,
+      "totalEgresos": 36000
+    },
+    "balance": {
+      "gananciaNeta": 91000,
+      "distribucion": {
+        "sueldoPersonal": 63699.99999999999,
+        "fondoBiciCarga": 18200,
+        "imprevistosAhorro": 9100
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-18",
+    "ingresos": {
+      "numeroDomicilios": 15,
+      "totalIngresos": 162000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "llever cpu a la paisana al centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar al frente de la fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar  a Harvi San Andresito centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "ida telefono a toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "ida telefono a toga fortuna centro"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "contra entrega toner en san nicolas centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "contra entrega mercancia al barrio sucre"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "vuelta telefeno de toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "vuelta telefono de toga fortuna centro "
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar mercancia a la terminal para tumaco"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar mercancia a la terminal para santander"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar impresora al barrio granada"
+        },
+        {
+          "tarifa": 20000,
+          "detalle": "entregar 2 paquetes al centro en la 9na con 13"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "contra entrega mercancia en el gran centro comercial centro "
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar mercancia a la terminal para tumaco"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 28000,
+      "totalEgresos": 28000
+    },
+    "balance": {
+      "gananciaNeta": 134000,
+      "distribucion": {
+        "sueldoPersonal": 93800,
+        "fondoBiciCarga": 26800,
+        "imprevistosAhorro": 13400
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-19",
+    "ingresos": {
+      "numeroDomicilios": 8,
+      "totalIngresos": 77000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para popayan"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "contra entrega equipo a san nicolas"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "ida telefono a toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "mercado libre centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "mercancia de tescom para san andresito"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para santander"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "mercancia de tescom para terminal candelaria"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "ida buscar telefono toga fortuna centro"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 43000,
+      "totalEgresos": 43000
+    },
+    "balance": {
+      "gananciaNeta": 34000,
+      "distribucion": {
+        "sueldoPersonal": 23800,
+        "fondoBiciCarga": 6800,
+        "imprevistosAhorro": 3400
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-20",
+    "ingresos": {
+      "numeroDomicilios": 8,
+      "totalIngresos": 75000,
+      "servicios": [
+        {
+          "tarifa": 5000,
+          "detalle": "recoger unos cargadores en makao center"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar mercancia para centro a San Andresito Lc 84"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "llevar 2 paquetes al terminal para Medellin"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar  mercancia para Daniela Osorio"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar a Don Uriel"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger iphone en toga centro"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "ida por un telefono donde toga"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar mercancia al cc calicentro de la Kr 8va"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 35000,
+      "totalEgresos": 35000
+    },
+    "balance": {
+      "gananciaNeta": 40000,
+      "distribucion": {
+        "sueldoPersonal": 28000,
+        "fondoBiciCarga": 8000,
+        "imprevistosAhorro": 4000
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-21",
+    "ingresos": {
+      "numeroDomicilios": 10,
+      "totalIngresos": 110000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "recoger telefono en toga fortuna centro"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "recoger en sinertech y llevar a mundo led"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para buenaventura"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar mercancia en la Kr 9 con 14"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "contra entrega en local de pijamas en la Kr 8 con 15"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar al frente del cc elite, sobre la calle 14 con 7"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "contra entrega en el cc elite septimo piso"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para la union valle"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger unas boards en el atanasio giraldot"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "recoger 2 paquetes en el centro bodega y despachar al terminal para medellin"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 70000,
+      "totalEgresos": 70000
+    },
+    "balance": {
+      "gananciaNeta": 40000,
+      "distribucion": {
+        "sueldoPersonal": 28000,
+        "fondoBiciCarga": 8000,
+        "imprevistosAhorro": 4000
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-22",
+    "ingresos": {
+      "numeroDomicilios": 10,
+      "totalIngresos": 122000,
+      "servicios": [
+        {
+          "tarifa": 12000,
+          "detalle": "despachar 2 mercancias pesada al terminal para putumayo"
+        },
+        {
+          "tarifa": 30000,
+          "detalle": "recoger board en villacolombia y despachar con lo demas en el terminal para piendamo"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger portatil en la casa de alcides "
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para ipiales nariño"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar a san andresito del centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "ida telefono alta gama fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "vuelta telefono alta gama fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar disco solido a dani osorio centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar impresora al gran centro comercial primer piso"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar play 5 al san andresito centro"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 20000,
+      "totalEgresos": 20000
+    },
+    "balance": {
+      "gananciaNeta": 102000,
+      "distribucion": {
+        "sueldoPersonal": 71400,
+        "fondoBiciCarga": 20400,
+        "imprevistosAhorro": 10200
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-24",
+    "ingresos": {
+      "numeroDomicilios": 9,
+      "totalIngresos": 97000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "recoger bateria ip 11 en toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "ida telefono en toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "vuelta telefono de toga fortuna centro"
+        },
+        {
+          "tarifa": 7000,
+          "detalle": "recoger caja cargadores en makao center del centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "llevar portatil a la unidad alcides"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para ginebra"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "despachar al terminal para roldanillo"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para zazal"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "recoger reloj apple watch en ip str fortuna centro"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 33000,
+      "totalEgresos": 33000
+    },
+    "balance": {
+      "gananciaNeta": 64000,
+      "distribucion": {
+        "sueldoPersonal": 44800,
+        "fondoBiciCarga": 12800,
+        "imprevistosAhorro": 6400
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-25",
+    "ingresos": {
+      "numeroDomicilios": 10,
+      "totalIngresos": 120000,
+      "servicios": [
+        {
+          "tarifa": 15000,
+          "detalle": "recoger cpu en la terminal"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger ip de toga fortuna centro"
+        },
+        {
+          "tarifa": 20000,
+          "detalle": "despachar impresora grande a la terminal para santander"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar 3 paquetes a mercado libre del centro"
+        },
+        {
+          "tarifa": 5000,
+          "detalle": "recoger telefono en la fortuna centro lc i12"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para tulua"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar portatil nuevo a Daniela Rivera Osorio"
+        },
+        {
+          "tarifa": 20000,
+          "detalle": "despachar al terminal para alvaro guevara santander"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para patricia arenas guacari"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal a popayan"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 38000,
+      "totalEgresos": 33000
+    },
+    "balance": {
+      "gananciaNeta": 87000,
+      "distribucion": {
+        "sueldoPersonal": 60899.99999999999,
+        "fondoBiciCarga": 17400,
+        "imprevistosAhorro": 8700
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-26",
+    "ingresos": {
+      "numeroDomicilios": 8,
+      "totalIngresos": 93000,
+      "servicios": [
+        {
+          "tarifa": 8000,
+          "detalle": "contra entrega producto a versalles"
+        },
+        {
+          "tarifa": 13000,
+          "detalle": "ida y vuelta de leidy"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "llevar almuerzo al centenario"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para alvaro santander"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "contra entrega al edificio colseguros centro"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "despachar al terminal caja impresora grande para corinto cauca"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para pereira risaralda"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para piendamo cauca"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 35000,
+      "totalEgresos": 35000
+    },
+    "balance": {
+      "gananciaNeta": 58000,
+      "distribucion": {
+        "sueldoPersonal": 40600,
+        "fondoBiciCarga": 11600,
+        "imprevistosAhorro": 5800
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-27",
+    "ingresos": {
+      "numeroDomicilios": 5,
+      "totalIngresos": 74000,
+      "servicios": [
+        {
+          "tarifa": 17000,
+          "detalle": "despacho al terminal para santander"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "despacho al terminal para buga"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "contra entrega al b/ obrero (stage)"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "entrega al edificio colseguros"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "despacho al terminal para roldanillo"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 35000,
+      "totalEgresos": 35000
+    },
+    "balance": {
+      "gananciaNeta": 39000,
+      "distribucion": {
+        "sueldoPersonal": 27300,
+        "fondoBiciCarga": 7800,
+        "imprevistosAhorro": 3900
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-28",
+    "ingresos": {
+      "numeroDomicilios": 18,
+      "totalIngresos": 187000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "recoger impresora de calicentro de la kr 8va"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar pedido de (max printer ) a mercado libre del centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar a la fortuna centro para Firmacho"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "ida telefono alta gama fortuna centro"
+        },
+        {
+          "tarifa": 1000,
+          "detalle": "recoger pantalla repuesto de alta gama fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despacho al terminal para popayan"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despacho al terminal para popayan"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar a la calle 15#7-60"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despacho al terminal para tumaco"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despacho al terminal para san pablo (n)"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "recoger bat de toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "ida telefonos a toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "vuelta telefonos iph de toga fortuna centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar a dixton led san nicolas"
+        },
+        {
+          "tarifa": 7000,
+          "detalle": "despacho al terminal para tulua"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "despacho 2 paquetes al terminal para medellin"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "despacho 1 paquete al terminal para medellin"
+        },
+        {
+          "tarifa": 25000,
+          "detalle": "despacho 1 paquete al terminal para medellin"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 65000,
+      "totalEgresos": 65000
+    },
+    "balance": {
+      "gananciaNeta": 122000,
+      "distribucion": {
+        "sueldoPersonal": 85400,
+        "fondoBiciCarga": 24400,
+        "imprevistosAhorro": 12200
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-29",
+    "ingresos": {
+      "numeroDomicilios": 7,
+      "totalIngresos": 84000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para popayan"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para popayan"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "despachar al terminal para piendamo"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "despachar al terminal para popayan"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "dejar en porteria en la unidad de alcides"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para santander"
+        },
+        {
+          "tarifa": 20000,
+          "detalle": "entregar a san andresito del centro para cristian cataño"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 35000,
+      "totalEgresos": 35000
+    },
+    "balance": {
+      "gananciaNeta": 49000,
+      "distribucion": {
+        "sueldoPersonal": 34300,
+        "fondoBiciCarga": 9800,
+        "imprevistosAhorro": 4900
+      }
+    }
+  },
+  {
+    "fecha": "2026-08-31",
+    "ingresos": {
+      "numeroDomicilios": 8,
+      "totalIngresos": 91000,
+      "servicios": [
+        {
+          "tarifa": 10000,
+          "detalle": "entregar al cc las americas del centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar a mercado libre del centro"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "despachar al terminal para popayan"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "despachar al terminal para buga"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "despachar al terminal para popayan"
+        },
+        {
+          "tarifa": 12000,
+          "detalle": "despachar al terminal para costa rica"
+        },
+        {
+          "tarifa": 15000,
+          "detalle": "despachar al terminal para santander"
+        },
+        {
+          "tarifa": 10000,
+          "detalle": "entregar a la paisa rivera osorio del centro"
+        }
+      ]
+    },
+    "egresos": {
+      "mantenimientoBici": 0,
+      "alimentacion": 30000,
+      "totalEgresos": 30000
+    },
+    "balance": {
+      "gananciaNeta": 61000,
+      "distribucion": {
+        "sueldoPersonal": 42700,
+        "fondoBiciCarga": 12200,
+        "imprevistosAhorro": 6100
+      }
+    }
+  }
+]
